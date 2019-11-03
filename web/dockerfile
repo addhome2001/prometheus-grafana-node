@@ -1,0 +1,7 @@
+FROM node:10.17.0-jessie-slim
+
+ADD . /srv/web
+WORKDIR /srv/web
+RUN yarn --slient
+
+CMD ["node", "App.js"]
